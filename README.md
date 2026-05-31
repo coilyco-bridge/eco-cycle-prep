@@ -16,7 +16,7 @@ ad on the main Eco Discord, and the longer post on the Sirens
 The cycle workflow pulls the latest from the sibling config and mod repos,
 regenerates a Discord digest of recent community input, rolls candidate
 worldgen seeds against a checked-in `WorldGenerator.eco`, syncs mod code
-(including [eco-mods-public](https://github.com/coilysiren/eco-mods-public))
+(including [eco-mods-public](https://github.com/coilyco-flight-deck/eco-mods-public))
 onto the game server, waits for the preview render, and posts
 announcements. Discord channel IDs and API tokens are resolved from AWS SSM
 at runtime.
@@ -39,7 +39,7 @@ to the biosphere. Kai's server, "Eco via Sirens", runs ~2-month cycles.
 
 ## Commands
 
-All dev verbs run through [`coily`](https://github.com/coilysiren/coily),
+All dev verbs run through [`coily`](https://github.com/coilyco-bridge/coily),
 declared in [`.coily/coily.yaml`](.coily/coily.yaml). Coily delegates to
 `make` targets, which call `python -m eco_cycle_prep.cli <verb>`. Run `coily
 --list` from inside this checkout to see every verb with its description.
@@ -91,4 +91,4 @@ inventory): `/eco/server-id`, `/sirens-echo/discord-bot-token`,
 - [docs/FEATURES.md](docs/FEATURES.md) - inventory of what ships today.
 - [.coily/coily.yaml](.coily/coily.yaml) - allowlisted commands.
 
-Cross-reference convention from [coilysiren/agentic-os#59](https://github.com/coilysiren/agentic-os/issues/59).
+Cross-reference convention from [coilysiren/agentic-os#59](https://github.com/coilyco-flight-deck/agentic-os/issues/59).

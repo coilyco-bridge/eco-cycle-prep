@@ -64,4 +64,4 @@ Entry points are `coily <verb>`, argparse subcommands in `eco_cycle_prep/cli.py`
 - [AGENTS.md](../AGENTS.md) - agent-facing operating rules.
 - [.coily/coily.yaml](../.coily/coily.yaml) - allowlisted commands.
 
-Cross-reference convention from [coilysiren/agentic-os#59](https://github.com/coilysiren/agentic-os/issues/59).
+Cross-reference convention from [coilysiren/agentic-os#59](https://github.com/coilyco-flight-deck/agentic-os/issues/59).

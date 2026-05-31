@@ -51,7 +51,7 @@ Triggers: `coily go-live` / `go-private`, `coily roll` / `post-roll`, `coily mod
 
 - **Voice** - read [`../eco-voice/VOICE.md`](../eco-voice/VOICE.md) first. Mechanical, specific. Numbers over adjectives. Name skills/tiers/recipes. No hype, no exclamation, no em-dashes. Under ~1500 chars. Sign off `[eco-cycle-prep / coily <verb>]`.
 - **Restart-schedule footer** - server restarts at 08:00 America/Los_Angeles. Patch notes that need a restart end with the next 08:00 PT via `restart_schedule_footer()` (DST-aware). Hot-reloaded changes don't need it.
-- **Public-repo commit links** - when source is in a public repo (only `eco-mods-public` today), include `https://github.com/coilysiren/eco-mods-public/commit/<sha>` (or `.../compare/<a>...<b>`) above the sign-off. Private repos don't get links.
+- **Public-repo commit links** - when source is in a public repo (only `eco-mods-public` today), include `https://github.com/coilyco-flight-deck/eco-mods-public/commit/<sha>` (or `.../compare/<a>...<b>`) above the sign-off. Private repos don't get links.
 - **Restart-notice embed** - `coily restart-notice [--reason=...]` posts a title-only embed matching DiscordLink's Started/Stopped format (color `7506394`, two-space emoji spacing). Post immediately before the restart, not after.
 - **Ops-command trace** - any task mutating real server state posts the literal invoke command to `#eco-status` **before** side-effects. Use `discord_post.ops_notice(command_text)` as the first concrete step. Title-only embed, format the command naturally, redact secrets at the call site. Any new ops verb ships with `ops_notice(...)` + Make target + `.coily/coily.yaml` entry as hard requirements.
 
@@ -61,4 +61,4 @@ Triggers: `coily go-live` / `go-private`, `coily roll` / `post-roll`, `coily mod
 - [docs/FEATURES.md](docs/FEATURES.md) - inventory of what ships today.
 - [.coily/coily.yaml](.coily/coily.yaml) - allowlisted commands.
 
-Cross-reference convention from [coilysiren/agentic-os#59](https://github.com/coilysiren/agentic-os/issues/59).
+Cross-reference convention from [coilysiren/agentic-os#59](https://github.com/coilyco-flight-deck/agentic-os/issues/59).
